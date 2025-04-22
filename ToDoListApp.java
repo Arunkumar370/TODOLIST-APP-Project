@@ -17,13 +17,13 @@ public class ToDoListApp {
         frame.getContentPane().setBackground(Color.GRAY);
 
         JLabel heading = new JLabel("TODO LIST", JLabel.CENTER);
-        heading.setFont(new Font("Verdana", Font.BOLD, 48)); // Increased font size
+        heading.setFont(new Font("Verdana", Font.BOLD, 48)); 
         heading.setForeground(Color.BLACK);
         frame.add(heading, BorderLayout.NORTH);
 
         taskListModel = new DefaultListModel<>();
         taskList = new JList<>(taskListModel);
-        taskList.setFont(new Font("Verdana", Font.BOLD, 24)); // Increased font size
+        taskList.setFont(new Font("Verdana", Font.BOLD, 24)); 
         taskList.setBackground(Color.WHITE);
         taskList.setForeground(Color.BLACK);
 
@@ -35,14 +35,14 @@ public class ToDoListApp {
         panel.setBackground(Color.GRAY);
 
         taskField = new JTextField(25);
-        taskField.setFont(new Font("Verdana", Font.BOLD, 22)); // Increased font size
+        taskField.setFont(new Font("Verdana", Font.BOLD, 22)); 
         taskField.setBackground(Color.WHITE);
         taskField.setForeground(Color.BLACK);
 
         JButton addButton = new JButton("➕ Add Task");
         JButton removeButton = new JButton("🗑 Remove Task");
         completeButton = new JButton("✔ Complete Task");
-        completeButton.setPreferredSize(new Dimension(200, 60)); // Increased button size
+        completeButton.setPreferredSize(new Dimension(200, 60)); 
 
         addButton.setBackground(new Color(0, 180, 0));
         removeButton.setBackground(new Color(180, 0, 0));
@@ -67,10 +67,10 @@ public class ToDoListApp {
         removeButton.addActionListener(e -> removeTask());
         completeButton.addActionListener(e -> completeTask());
 
-        // Set Enter key to trigger Add Task button
+    
         taskField.addActionListener(e -> addTask());
 
-        // Set Delete key to trigger Remove Task button
+        
         taskList.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
