@@ -52,9 +52,9 @@ public class ToDoListApp {
         removeButton.setForeground(Color.BLACK);
         completeButton.setForeground(Color.BLACK);
 
-        addButton.setFont(new Font("Verdana", Font.BOLD, 20)); // Increased font size
-        removeButton.setFont(new Font("Verdana", Font.BOLD, 20)); // Increased font size
-        completeButton.setFont(new Font("Verdana", Font.BOLD, 20)); // Increased font size
+        addButton.setFont(new Font("Verdana", Font.BOLD, 20)); 
+        removeButton.setFont(new Font("Verdana", Font.BOLD, 20)); 
+        completeButton.setFont(new Font("Verdana", Font.BOLD, 20)); 
 
         panel.add(taskField);
         panel.add(addButton);
